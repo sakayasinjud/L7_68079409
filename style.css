@@ -1,0 +1,56 @@
+body{
+margin:0;
+font-family:sans-serif;
+background:#eee;
+}
+
+/* VIDEO BANNER */
+
+.video-container{
+position:relative;
+width:100%;
+height:100vh; /* แก้ตรงนี้ */
+overflow:hidden;
+}
+
+/* VIDEO */
+
+video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:1;
+}
+
+/* FORM */
+
+.form-container{
+position:absolute;
+top:55%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(255,255,255,0.2); /* ทำให้ใส */
+backdrop-filter:blur(8px); /* เอฟเฟกต์กระจก */
+padding:30px;
+border-radius:10px;
+width:420px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+z-index:2;
+}
+
+/* PLAY PAUSE */
+
+.video-controls{
+position:absolute;
+top:120px;
+left:50%;
+transform:translateX(-50%);
+z-index:3;
+}
+
+.video-controls button{
+margin:5px;
+}
